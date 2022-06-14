@@ -28,7 +28,7 @@ class Solid_Rectangle{
 // *       *
 // * * * * *
 
-// Not Clear !!!!!!!!!~~~~~~~~~~~~!!!!!!!!!!!~~~~~~~~~~~~
+// Not Clear !!!!!!!!!
 
 class Hollow_Rectangle{
     public static void main(String args[]){
