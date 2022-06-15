@@ -19,7 +19,6 @@ class Solid_Rectangle{
     }
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Hollow Rectangle
 
@@ -52,7 +51,6 @@ class Hollow_Rectangle{
     }
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Half Pyramid
 
@@ -69,7 +67,7 @@ class Half_Pyramid{
         int n = 4;
         
         for(int row = 1; row <= n; row++){
-            for(int col=1; col<=row; col++){
+            for(int col = 1; col <= row; col++){
                 System.out.print("*");
             }
             System.out.println();
@@ -85,6 +83,7 @@ class Half_Pyramid{
     }
 }
 
+
 //Inverted Half Pyramid
 
 // Expected Output:
@@ -94,15 +93,12 @@ class Half_Pyramid{
 // **
 // * 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 class Inverted_Half_Pyramid{
     public static void main(String args[]){
         int n = 4;
         
         for(int row = 1; row <= n; row++){
-            for(int col = n; col>=row; col--){
+            for(int col = n; col >= row; col--){
                 System.out.print("*");
             }
             System.out.println();
@@ -127,4 +123,46 @@ class Inverted_Half_Pyramid{
     }
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Inverted Half Pyramid
+
+// Expected Output:
+
+//    *
+//   **
+//  ***
+// ****
+
+class Inverted_Half_Pyramid_rotateby380deg{
+    public static void main(String args[]){
+        int n = 4;
+        
+        // outer loop
+        for(int i = 1; i <= n; i++){
+            // inner loop - space print
+            for(int j = 1; j <= n-i; j++){
+                System.out.print(" ");
+            }
+            // inner loop - star print
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // or
+
+        // int tmp = n;
+        // for(int row = 1; row <= n; row++){
+        //     for(int col=1; col <= n; col++){
+        //         if(col>=tmp){
+        //             System.out.print("*");
+        //         } else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     tmp--;
+        //     System.out.println();
+        // }
+    }
+}
