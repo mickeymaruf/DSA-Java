@@ -19,6 +19,8 @@ class Solid_Rectangle{
     }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 //Hollow Rectangle
 
 // Expected Output:
@@ -50,6 +52,8 @@ class Hollow_Rectangle{
     }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 //Half Pyramid
 
 // Expected Output:
@@ -64,16 +68,63 @@ class Half_Pyramid{
     public static void main(String args[]){
         int n = 4;
         
-        // int tmp = 1;
         for(int row = 1; row <= n; row++){
             for(int col=1; col<=row; col++){
                 System.out.print("*");
             }
             System.out.println();
         }
+
+        // or
+
+        // int tmp = 1;
         // for(int row = 1; row <= n; row++){
         //     System.out.println("*".repeat(tmp));
         //     tmp++;
         // }
     }
 }
+
+//Inverted Half Pyramid
+
+// Expected Output:
+
+// ****
+// ***
+// **
+// * 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+class Inverted_Half_Pyramid{
+    public static void main(String args[]){
+        int n = 4;
+        
+        for(int row = 1; row <= n; row++){
+            for(int col = n; col>=row; col--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // or
+
+        // for(int row = n; row >= 1; row--){
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
+        // or
+
+        // int tmp=n;
+        // for(int row = 1; row <= n; row++){
+        //     System.out.println("*".repeat(tmp));
+        //     tmp--;
+        // }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
