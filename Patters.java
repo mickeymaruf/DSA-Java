@@ -2,10 +2,10 @@
 
 // Expected Output:
 
-// * * * * *
-// * * * * *
-// * * * * *
-// * * * * *
+// *****
+// *****
+// *****
+// *****
 
 class Solid_Rectangle{
     public static void main(String args[]){
@@ -23,10 +23,10 @@ class Solid_Rectangle{
 
 // Expected Output:
 
-// * * * * *
-// *       *
-// *       *
-// * * * * *
+// *****
+// *   *
+// *   *
+// *****
 
 // Not Clear !!!!!!!!!
 
@@ -47,5 +47,33 @@ class Hollow_Rectangle{
             }
             System.out.println();
         }
+    }
+}
+
+//Half Pyramid
+
+// Expected Output:
+
+// * 
+// **
+// ***
+// ****
+
+
+class Half_Pyramid{
+    public static void main(String args[]){
+        int n = 4;
+        
+        // int tmp = 1;
+        for(int row = 1; row <= n; row++){
+            for(int col=1; col<=row; col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // for(int row = 1; row <= n; row++){
+        //     System.out.println("*".repeat(tmp));
+        //     tmp++;
+        // }
     }
 }
